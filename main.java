@@ -1,6 +1,6 @@
-/*package Lap4;
+package lap4;
 
-public class main {
+public class Main {
 
 	//public static void main(String[]args) {
 		/*Date d = new Date(2, 2, 2004);
@@ -14,4 +14,4 @@ public class main {
 		
 	}
 
-}*/
+}
