@@ -16,15 +16,15 @@ public class BankAccountTest {
 		
 		//Test Deposit
 		customer1.deposit(1000);
-		//customer1.property();
+		//System.out.println(customer1.property());
 		System.out.println();
 		
 		//Test Tranfer
 		customer2.tranfer(customer1, 300);
 		/*System.out.print("Account 1 ");
-		customer1.property();
+		System.out.println(customer1.property());
 		System.out.print("Account 2 ");
-		customer2.property();*/
+		System.out.println(customer2.property());*/
 		System.out.println();
 		
 		//Test Withdraw
@@ -32,10 +32,8 @@ public class BankAccountTest {
 		System.out.println();
 		
 		//Test Property
-		System.out.println(customer1.getInfo());
-		System.out.println("Current amount : "+customer1.getAmount()+" Bath");
+		System.out.println(customer1.getInfo()+"\nCurrent amount : "+customer1.getAmount()+" Bath");
 		System.out.println();
-		System.out.println(customer2.getInfo());
-		System.out.println("Current amount : "+customer2.getAmount()+" Bath");
+		System.out.println(customer2.getInfo()+"\nCurrent amount : "+customer2.getAmount()+" Bath");
 	}
 }
