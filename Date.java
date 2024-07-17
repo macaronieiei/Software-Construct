@@ -1,4 +1,4 @@
-package Lap4;
+package lap4;
 
 public class Date {
 	private int day;
@@ -10,26 +10,26 @@ public class Date {
 		this.month = month;
 		this.year = year;
 	}
-	public void setterDay(int day) {
+	public void setDay(int day) {
 		if(day>=1 && day<=31)
 			this.day = day;
 	}
-	public int getterDay() {
+	public int getDay() {
 		//System.out.println(day);
 		return day;
 		}
-	public void setterMonth(int month) {
+	public void setMonth(int month) {
 		if(month>=1 && month<=12)
 			this.month = month;
 	}
-	public int getterMonth() {
+	public int getMonth() {
 		//System.out.println(month);
 		return month;
 		}
-	public void setterYear(int year) {
+	public void setYear(int year) {
 		this.year = year;
 	}
-	public int getterYear() {
+	public int getYear() {
 		//System.out.println(year);
 		return year+543;
 		}
@@ -37,4 +37,3 @@ public class Date {
 		System.out.println(day+","+month+","+year);
 	}*/
 }
-	
