@@ -1,17 +1,17 @@
-package Lap4;
+package lap4;
 
-public class bankAccountTest {
+public class BankAccountTest {
 
 	public static void main(String[] args) {
 		//Test Create New Acc Amount = 0
-		System.out.println("Customer1");
+		System.out.println("Customer "+BankAccount.count);
 		BankAccount customer1 = new BankAccount("Bank1");
 		System.out.println();
 		
 		//Test Crearte New Acc Amount > 0
-		System.out.println("Customer2");
-		Date date = new Date(1, 11, 2015);
-		BankAccount customer2 = new BankAccount("Bank2",500,date);
+		//Date date = new Date(1, 11, 2015);
+		System.out.println("Customer "+BankAccount.count);
+		BankAccount customer2 = new BankAccount("Bank2",500,new Date(1, 11, 2015));
 		System.out.println();
 		
 		//Test Deposit
@@ -33,9 +33,9 @@ public class bankAccountTest {
 		
 		//Test Property
 		System.out.println(customer1.getInfo());
-		customer1.property();
+		System.out.println("Current amount : "+customer1.getAmount()+" Bath");
 		System.out.println();
 		System.out.println(customer2.getInfo());
-		customer2.property();
+		System.out.println("Current amount : "+customer2.getAmount()+" Bath");
 	}
 }
