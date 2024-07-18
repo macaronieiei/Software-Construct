@@ -88,7 +88,7 @@ public class Product {
 				 break;
 			 }
 		}
-		System.out.println("Total amount: " + total);
+		System.out.println("You have to pay "+total+" Bath");
 		input.close();
 	}
 }
