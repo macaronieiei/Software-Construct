@@ -1,0 +1,25 @@
+package lap5;
+
+public class Cashier {
+	private String nameCart;
+	
+	public Cashier(String name) {
+		this.nameCart = name;
+	}
+	public void printReceipt(InventoryCart cart) {
+		double total; 
+		System.out.println("Pumkin Shop ( "+nameCart+" )");
+		//Product[] cashProduct = cart.getAllProduct();
+		
+		/*for(int i=0;i){
+		System.out.println("1 x "+cart.getProductAt(i)+"");
+		total = total+cart.getProductAt(i).getPrice;
+		}
+		
+		System.out.println("------------");
+		System.out.println("Total "+total+" ");*/
+		
+	
+	
+	}
+}
