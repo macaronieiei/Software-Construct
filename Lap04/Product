@@ -61,10 +61,12 @@ public class Product {
 
 		//List of Products
 		System.out.println("======== List of Products ========");
+		int count2 = 0;
 		for(int j=0;j<5;j++) {
-			System.out.println("Product code "+j);
+			System.out.println("Product code "+count2);
 			System.out.println("Name : "+product[j].getName()+" , Price : "+product[j].getPrice());
 			System.out.println();
+			count2+=10;
 		}
 		
 		//What do you want to buy
