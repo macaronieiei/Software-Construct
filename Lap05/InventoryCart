@@ -11,9 +11,12 @@ public class InventoryCart {
 		products[index++] = p;
 	}
 	public Product getProductAt(int num) {
-		return products[num];
-	}
-	
+        if (num >= 0 && num < products.length) {
+            return products[num];
+        } else {
+            return null; 
+        }
+    }
 	public Product[] getAllProduct() {
 		return products;
 	}
