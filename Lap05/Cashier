@@ -1,26 +1,23 @@
 package lap5;
 
 public class Cashier {
-	private String nameCart;
+	public String nameCahier;
 	
-	public Cashier(String name) {
-		this.nameCart = name;
+	public Cashier(String nameCart) {
+		this.nameCahier = nameCart;
 	}
 	public void printReceipt(InventoryCart cart) {
         double total = 0;
-        System.out.println("Pumkin Shop ( " + cart + " )");
+        System.out.println("\tPumkin Shop ( " + nameCahier + " )");
 
         for (int i = 0; i < cart.getAllProduct().length; i++) {
-            Product pc = cart.getProductAt(i);
-            if (pc != null) {
-                System.out.println("1 x " + pc.getCode() + "\t" + pc.getName() + "\t" + pc.getPrice());
-                total = total + pc.getPrice();
+            Product eachProduct = cart.getProductAt(i);
+            if (eachProduct != null) {
+                System.out.println("1 x " + eachProduct.getName() + "\t(" + eachProduct.getCode() + ")\t" + eachProduct.getPrice());
+                total = total + eachProduct.getPrice();
            }
         }
-		System.out.println("------------");
-		System.out.println("Total "+total+" ");
-		
-	
-	
+		System.out.println("\t\t--------------------");
+		System.out.println("\t\tTotal "+total+" ");
 	}
 }
