@@ -1,0 +1,33 @@
+package th.ac.ku.kps.cs;
+import java.util.Scanner;
+
+public class Eaxam2 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Enter x : ");
+		int x = sc.nextInt();
+		System.out.print("Enter y : ");
+		int y = sc.nextInt();
+		
+		if(x==0 && y==0)
+			System.out.print("coordinates ("+x+","+y+") = origin");
+		else if(x==0 || y==0) {
+			if (y==0)
+				System.out.print("coordinates ("+x+","+y+") = x-intercept");
+			if (x==0)
+				System.out.print("coordinates ("+x+","+y+") = y-intercept");
+		}
+		else if(x!=0 && y!=0) {
+			if(x>0 && y>0)
+				System.out.print("coordinates ("+x+","+y+") = Q1");
+			if(x<0 && y>0)
+				System.out.print("coordinates ("+x+","+y+") = Q2");
+			if(x<0 && y<0)
+				System.out.print("coordinates ("+x+","+y+") = Q3");
+			if(x>0 && y<0)
+				System.out.print("coordinates ("+x+","+y+") = Q4");
+		}
+	}
+}
